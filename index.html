@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Império Brasil Pet Shop | Campinas — rações, acessórios e entrega rápida</title>
+<meta name="description" content="Império Brasil Pet Shop em Campinas: rações, acessórios, higiene e a entrega mais rápida da cidade. Nota 4,9 no Google. Peça pelo WhatsApp.">
+<meta name="theme-color" content="#f26a1b">
+<link rel="icon" type="image/png" href="image-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --laranja:#f26a1b; --laranja-esc:#d4570e; --laranja-claro:#ff8a3d;
+  --azul:#12324f; --azul2:#1b4straight; --azul2:#1b476e;
+  --creme:#fff8f1; --areia:#fdeede; --tinta:#26333f; --cinza:#6a7783; --linha:#f2ddc8;
+  --verde:#25d366; --verde-esc:#0b7a3e;
+  --sombra:0 22px 55px -26px rgba(18,50,79,.5); --sombra-sm:0 10px 26px -16px rgba(18,50,79,.4);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:82px}
+body{margin:0;font-family:"Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--tinta);background:var(--creme);line-height:1.65;font-weight:400;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Montserrat",sans-serif;line-height:1.1;margin:0;color:var(--azul);font-weight:800;letter-spacing:-.5px}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{width:min(1180px,92%);margin-inline:auto}
+.section{padding:96px 0;position:relative}
+.eyebrow{font-family:"Montserrat",sans-serif;text-transform:uppercase;letter-spacing:2.5px;font-size:13px;font-weight:800;color:var(--laranja);margin-bottom:14px}
+.center{text-align:center;max-width:680px;margin-inline:auto}
+.center p{color:var(--cinza);font-size:18px;margin-top:12px}
+h2{font-size:clamp(30px,4.2vw,48px)}
+.ico{width:1em;height:1em;display:inline-block;vertical-align:-.15em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.ico.fill{fill:currentColor;stroke:none}
+.paws{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='%23f26a1b' fill-opacity='0.05'%3E%3Cellipse cx='40' cy='52' rx='9' ry='12'/%3E%3Cellipse cx='24' cy='34' rx='5' ry='7'/%3E%3Cellipse cx='40' cy='28' rx='5' ry='7'/%3E%3Cellipse cx='56' cy='34' rx='5' ry='7'/%3E%3C/g%3E%3C/svg%3E");pointer-events:none}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:"Montserrat",sans-serif;font-weight:700;font-size:15px;padding:14px 26px;border-radius:999px;border:2px solid transparent;cursor:pointer;transition:.18s;white-space:nowrap}
+.btn .ico{font-size:19px}
+.btn-zap{background:var(--verde);color:#053b1e}
+.btn-zap:hover{filter:brightness(1.06);transform:translateY(-2px);box-shadow:0 14px 30px -12px rgba(37,211,102,.7)}
+.btn-laranja{background:var(--laranja);color:#fff}
+.btn-laranja:hover{background:var(--laranja-esc);transform:translateY(-2px)}
+.btn-ghost{border-color:#ffffff8c;color:#fff}
+.btn-ghost:hover{background:#ffffff1f}
+.btn-out{border-color:var(--laranja);color:var(--laranja-esc);background:#fff}
+.btn-out:hover{background:var(--areia)}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:#fff8f1e6;backdrop-filter:blur(12px);border-bottom:1px solid var(--linha)}
+.nav{display:flex;align-items:center;gap:22px;height:72px}
+.logo{display:flex;align-items:center;gap:13px}
+.logo-img{width:48px;height:48px;border-radius:12px;box-shadow:0 8px 18px -10px rgba(0,0,0,.5)}
+.logo-tag{font-family:"Montserrat",sans-serif;font-weight:800;font-size:12px;letter-spacing:2px;line-height:1.25;text-transform:uppercase;color:var(--laranja-esc)}
+.menu{display:flex;gap:26px;margin-left:auto;font-weight:700}
+.menu a{position:relative}
+.menu a:hover{color:var(--laranja)}
+.social{display:flex;gap:8px}
+.social a{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--areia);color:var(--laranja-esc);transition:.18s}
+.social a:hover{background:var(--laranja);color:#fff;transform:translateY(-2px)}
+.social a .ico{font-size:18px}
+.burger{display:none;margin-left:auto;background:none;border:0;color:var(--azul);cursor:pointer}
+.burger .ico{font-size:30px}
+
+/* hero */
+.hero{position:relative;color:#fff;overflow:hidden}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(18,50,79,.95) 0%,rgba(18,50,79,.82) 40%,rgba(18,50,79,.35) 100%)}
+.hero-in{position:relative;padding:104px 0 116px;max-width:680px}
+.hero .tag{display:inline-flex;align-items:center;gap:9px;background:#ffffff1f;border:1px solid #ffffff45;padding:8px 17px;border-radius:999px;font-weight:700;font-size:14px;margin-bottom:24px}
+.hero .tag .ico{font-size:17px;color:var(--laranja-claro)}
+.hero h1{color:#fff;font-size:clamp(38px,6vw,64px);font-weight:900;letter-spacing:-1.8px}
+.hero h1 span{color:var(--laranja-claro)}
+.hero p.sub{font-size:clamp(17px,2.2vw,21px);margin:22px 0 34px;color:#e9f1f7;max-width:560px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.rating{display:inline-flex;align-items:center;gap:12px;margin-top:30px;background:#ffffff14;border:1px solid #ffffff2b;padding:12px 18px;border-radius:16px}
+.rating .stars{display:flex;gap:2px;color:#ffc23d}
+.rating .stars .ico{font-size:19px}
+.rating b{font-family:"Montserrat";font-size:22px}
+.rating span{color:#e9f1f7;font-size:14px;font-weight:600}
+
+/* trust */
+.trust{background:var(--azul);color:#eaf1f7}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:26px 0}
+.trust .item{display:flex;align-items:center;gap:14px;padding:8px 16px}
+.trust .item+.item{border-left:1px solid #ffffff1a}
+.trust .t-ic{width:46px;height:46px;border-radius:12px;background:#ffffff12;display:grid;place-items:center;color:var(--laranja-claro);flex:none}
+.trust .t-ic .ico{font-size:24px}
+.trust .item b{display:block;font-family:"Montserrat";font-size:18px;color:#fff;line-height:1.15}
+.trust .item span{font-size:13px;color:#b9cad8}
+
+/* service cards */
+.scards{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:46px}
+.scard{background:#fff;border:1px solid var(--linha);border-radius:22px;overflow:hidden;box-shadow:var(--sombra-sm);transition:.2s;display:flex;flex-direction:column}
+.scard:hover{transform:translateY(-6px);box-shadow:var(--sombra)}
+.scard-img{position:relative;height:180px}
+.scard-img img{width:100%;height:100%;object-fit:cover}
+.scard-ic{position:absolute;left:16px;bottom:-22px;width:52px;height:52px;border-radius:15px;background:var(--laranja);color:#fff;display:grid;place-items:center;box-shadow:0 10px 20px -8px var(--laranja);border:3px solid #fff}
+.scard-ic .ico{font-size:25px}
+.scard-body{padding:32px 22px 24px;display:flex;flex-direction:column;flex:1}
+.scard-body h3{font-size:20px;margin-bottom:8px}
+.scard-body p{color:var(--cinza);font-size:15px;flex:1}
+.link-arrow{display:inline-flex;align-items:center;gap:7px;margin-top:16px;font-family:"Montserrat";font-weight:600;color:var(--laranja-esc)}
+.link-arrow .ico{font-size:17px;transition:.18s}
+.link-arrow:hover .ico{transform:translateX(4px)}
+
+/* story band */
+.story{background:linear-gradient(120deg,#12324f,#1b476e);color:#eaf1f7;overflow:hidden}
+.story .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+.story .eyebrow{color:var(--laranja-claro)}
+.story h2{color:#fff}
+.story p{color:#cfdcea;font-size:17px;margin-top:14px}
+.story ul{list-style:none;padding:0;margin:26px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.story li{display:flex;align-items:center;gap:11px;font-weight:700;color:#fff}
+.story li .ck{width:30px;height:30px;border-radius:9px;background:var(--verde);color:#053b1e;display:grid;place-items:center;flex:none}
+.story li .ck .ico{font-size:17px}
+.story-fig{border-radius:24px;overflow:hidden;box-shadow:var(--sombra);aspect-ratio:4/3}
+.story-fig img{width:100%;height:100%;object-fit:cover}
+
+/* diferenciais */
+.dif{background:var(--areia)}
+.dif-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:46px}
+.dif-card{background:#fff;border-radius:22px;padding:34px 28px;box-shadow:var(--sombra-sm);border:1px solid var(--linha)}
+.dif-card .d-ic{width:60px;height:60px;border-radius:17px;background:var(--areia);color:var(--laranja-esc);display:grid;place-items:center;margin-bottom:18px}
+.dif-card .d-ic .ico{font-size:29px}
+.dif-card h3{font-size:22px;margin-bottom:10px}
+.dif-card p{color:var(--cinza)}
+.dif-card .chip{display:inline-flex;align-items:center;gap:7px;margin-top:14px;font-size:13px;color:var(--laranja-esc);font-weight:800;background:var(--areia);padding:5px 12px;border-radius:999px}
+.dif-card .chip .ico{font-size:15px;color:#ffb400}
+
+/* galeria */
+.galeria{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px;margin-top:46px}
+.galeria a{overflow:hidden;border-radius:18px;position:relative}
+.galeria img{width:100%;height:100%;object-fit:cover;transition:.45s}
+.galeria a:hover img{transform:scale(1.07)}
+.g-tall{grid-row:span 2}
+.g-wide{grid-column:span 2}
+
+/* unidades */
+.unid{background:var(--azul);color:#eaf1f7}
+.unid h2{color:#fff}.unid .eyebrow{color:var(--laranja-claro)}.unid .center p{color:#b9cad8}
+.unid-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:46px}
+.unid-card{background:#173a5b;border:1px solid #ffffff14;border-radius:20px;padding:24px 26px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.unid-card.destaque{background:linear-gradient(120deg,var(--laranja),var(--laranja-esc));border-color:transparent}
+.unid-card .u-left{display:flex;align-items:center;gap:15px}
+.unid-card .u-ic{width:46px;height:46px;border-radius:12px;background:#ffffff1c;display:grid;place-items:center;color:#fff;flex:none}
+.unid-card .u-ic .ico{font-size:23px}
+.unid-card h3{color:#fff;font-size:19px}
+.unid-card span{font-size:14px;color:#cddae6}
+.unid-card.destaque span{color:#ffe6d2}
+.selo{font-family:"Montserrat";font-size:11px;font-weight:600;background:#ffffff33;color:#fff;padding:3px 10px;border-radius:999px;margin-left:8px;vertical-align:middle}
+
+/* contato */
+.contato-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:46px;align-items:start}
+.info-linha{display:flex;gap:16px;padding:17px 0;border-bottom:1px solid var(--linha)}
+.info-linha .l-ic{width:44px;height:44px;border-radius:12px;background:var(--areia);color:var(--laranja-esc);display:grid;place-items:center;flex:none}
+.info-linha .l-ic .ico{font-size:22px}
+.info-linha b{font-family:"Montserrat";color:var(--azul);display:block;font-size:16px;font-weight:600}
+.info-linha span{color:var(--cinza);font-size:15px}
+.horario{list-style:none;padding:0;margin:6px 0 0}
+.horario li{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px dashed var(--linha);font-size:15px}
+.horario li b{color:var(--azul);font-family:"Montserrat";font-weight:800}
+.mapa-wrap{border-radius:22px;overflow:hidden;min-height:380px;box-shadow:var(--sombra-sm)}
+.mapa{border:0;width:100%;height:100%;min-height:380px}
+
+/* cta final */
+.cta-final{background:linear-gradient(120deg,var(--laranja),var(--laranja-esc));color:#fff;text-align:center;overflow:hidden}
+.cta-final h2{color:#fff;font-size:clamp(30px,4.4vw,46px)}
+.cta-final p{max-width:580px;margin:16px auto 30px;color:#fff3e9;font-size:19px}
+.cta-final .paws{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='%23ffffff' fill-opacity='0.08'%3E%3Cellipse cx='40' cy='52' rx='9' ry='12'/%3E%3Cellipse cx='24' cy='34' rx='5' ry='7'/%3E%3Cellipse cx='40' cy='28' rx='5' ry='7'/%3E%3Cellipse cx='56' cy='34' rx='5' ry='7'/%3E%3C/g%3E%3C/svg%3E")}
+
+/* footer */
+footer{background:#0e2439;color:#9fb4c6;padding:56px 0 32px;font-size:14px}
+footer .top{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center;border-bottom:1px solid #ffffff14;padding-bottom:26px;margin-bottom:24px}
+footer .logo{color:#fff}
+footer .social a{background:#ffffff14;color:#fff}
+footer .social a:hover{background:var(--laranja)}
+footer a:hover{color:#fff}
+footer .aviso{font-size:12px;color:#6b8299;max-width:760px;margin-top:10px}
+
+/* whatsapp float */
+.zap-float{position:fixed;right:20px;bottom:20px;z-index:60;background:var(--verde);color:#fff;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(0,0,0,.5);animation:pulse 2.4s infinite}
+.zap-float .ico{font-size:32px}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+
+@media(max-width:900px){
+  .story .wrap{grid-template-columns:1fr;gap:30px}
+  .scards{grid-template-columns:repeat(2,1fr)}
+  .dif-grid{grid-template-columns:1fr}
+}
+@media(max-width:860px){
+  .menu,.social{display:none}
+  .burger{display:block}
+  .nav .btn.desktop{display:none}
+  .trust .wrap{grid-template-columns:1fr 1fr;gap:14px}
+  .trust .item:nth-child(odd){border-left:0}
+  .galeria{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}
+  .g-wide{grid-column:span 2}
+  .unid-grid{grid-template-columns:1fr}
+  .contato-grid{grid-template-columns:1fr}
+  .story ul{grid-template-columns:1fr}
+  .section{padding:64px 0}
+}
+@media(max-width:520px){ .scards{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+
+<!-- SPRITE DE ÍCONES -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="paw" viewBox="0 0 24 24"><ellipse cx="12" cy="15.5" rx="4.2" ry="3.4"/><ellipse cx="5.6" cy="11" rx="1.9" ry="2.5"/><ellipse cx="10" cy="7.4" rx="1.9" ry="2.5"/><ellipse cx="14" cy="7.4" rx="1.9" ry="2.5"/><ellipse cx="18.4" cy="11" rx="1.9" ry="2.5"/></symbol>
+  <symbol id="emblema" viewBox="0 0 48 48"><path d="M11 25.5V15l8 5.5L24 10.5l5 10L37 15v10.5z" fill="#ffd15a"/><circle cx="11" cy="14" r="1.7" fill="#ffd15a"/><circle cx="24" cy="9.4" r="1.9" fill="#ffd15a"/><circle cx="37" cy="14" r="1.7" fill="#ffd15a"/><g fill="#fff"><ellipse cx="24" cy="37.2" rx="5.3" ry="4.3"/><ellipse cx="16.4" cy="32.4" rx="2.2" ry="2.9"/><ellipse cx="21.3" cy="29.3" rx="2.2" ry="2.9"/><ellipse cx="26.7" cy="29.3" rx="2.2" ry="2.9"/><ellipse cx="31.6" cy="32.4" rx="2.2" ry="2.9"/></g></symbol>
+  <symbol id="star" viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></symbol>
+  <symbol id="whatsapp" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
+  <symbol id="instagram" viewBox="0 0 24 24"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.15" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="facebook" viewBox="0 0 24 24"><path d="M14 8.5V7c0-.7.3-1 1-1h1.5V3H14c-2 0-3.3 1.3-3.3 3.4V8.5H8.5v3h2.2V21h3.3v-9.5h2.3l.4-3z"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><polyline points="12 6.5 12 12 16 14"/></symbol>
+  <symbol id="truck" viewBox="0 0 24 24"><rect x="1.5" y="6" width="12.5" height="10" rx="1.5"/><path d="M14 9.5h3.8l2.7 2.8V16H14z"/><circle cx="6" cy="18" r="1.9"/><circle cx="17.3" cy="18" r="1.9"/></symbol>
+  <symbol id="bone" viewBox="0 0 24 24"><path d="M17 10c.7-.7 1.69 0 2.5 0a2.5 2.5 0 100-5 .5.5 0 01-.5-.5 2.5 2.5 0 10-5 0c0 .81.7 1.8 0 2.5l-7 7c-.7.7-1.69 0-2.5 0a2.5 2.5 0 100 5c.28 0 .5.22.5.5a2.5 2.5 0 105 0c0-.81-.7-1.8 0-2.5z"/></symbol>
+  <symbol id="ball" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M4 8.5c5 2.5 11 2.5 16 0M4 15.5c5-2.5 11-2.5 16 0M12 2.5v19"/></symbol>
+  <symbol id="droplet" viewBox="0 0 24 24"><path d="M12 2.7l5.7 5.7a8 8 0 11-11.4 0z"/></symbol>
+  <symbol id="bag" viewBox="0 0 24 24"><path d="M6 2.5L3.5 6.5V20a1.5 1.5 0 001.5 1.5h14A1.5 1.5 0 0020.5 20V6.5L18 2.5z"/><path d="M3.5 6.5h17"/><path d="M16 10a4 4 0 01-8 0"/></symbol>
+  <symbol id="tag" viewBox="0 0 24 24"><path d="M20.6 13.4l-7.2 7.2a2 2 0 01-2.83 0L2.5 12.5V4.5a2 2 0 012-2h8l8.1 8.1a2 2 0 010 2.8z"/><circle cx="7.5" cy="7.5" r="1.4"/></symbol>
+  <symbol id="heart" viewBox="0 0 24 24"><path d="M20.8 5.6a5.4 5.4 0 00-7.7 0L12 6.7l-1.1-1.1a5.4 5.4 0 10-7.7 7.7l1.1 1.1L12 21.2l7.7-7.8 1.1-1.1a5.4 5.4 0 000-7.7z"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+  <symbol id="arrow" viewBox="0 0 24 24"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+  <symbol id="menu" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+</svg>
+
+<header>
+  <nav class="wrap nav">
+    <a class="logo" href="#topo">
+      <img class="logo-img" src="image-logo.png" alt="Império Brasil Pet Shop — Campinas">
+      <span class="logo-tag">Pet Shop<br>Campinas</span>
+    </a>
+    <div class="menu">
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">A loja</a>
+      <a href="#unidades">Unidades</a>
+      <a href="#contato">Contato</a>
+    </div>
+    <div class="social">
+      <a href="https://www.instagram.com/imperio.brasilpetshop/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ico fill"><use href="#instagram"/></svg></a>
+      <a href="https://www.facebook.com/imperiobrasilpetshop/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="ico fill"><use href="#facebook"/></svg></a>
+    </div>
+    <a class="btn btn-zap desktop" href="https://wa.me/5519984317424?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener"><svg class="ico fill"><use href="#whatsapp"/></svg> WhatsApp</a>
+    <button class="burger" id="burger" aria-label="Menu"><svg class="ico"><use href="#menu"/></svg></button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="topo">
+  <div class="hero-bg"><img src="assets/foto-01.jpg" alt="Fachada da loja Império Brasil Pet Shop em Campinas"></div>
+  <div class="wrap hero-in">
+    <span class="tag"><svg class="ico"><use href="#truck"/></svg> A entrega mais rápida de Campinas</span>
+    <h1>Tudo para o seu pet, <span>pertinho de você</span></h1>
+    <p class="sub">Rações, acessórios, higiene e os melhores produtos para o seu melhor amigo — com atendimento que os clientes elogiam e entrega rápida em toda Campinas.</p>
+    <div class="hero-cta">
+      <a class="btn btn-zap" href="https://wa.me/5519984317424?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener"><svg class="ico fill"><use href="#whatsapp"/></svg> Pedir pelo WhatsApp</a>
+      <a class="btn btn-ghost" href="#unidades">Ver unidades</a>
+    </div>
+    <div class="rating">
+      <span class="stars"><svg class="ico fill"><use href="#star"/></svg><svg class="ico fill"><use href="#star"/></svg><svg class="ico fill"><use href="#star"/></svg><svg class="ico fill"><use href="#star"/></svg><svg class="ico fill"><use href="#star"/></svg></span>
+      <b>4,9</b><span>no Google · 156 avaliações</span>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<div class="trust">
+  <div class="wrap">
+    <div class="item"><span class="t-ic"><svg class="ico fill"><use href="#star"/></svg></span><div><b>4,9 estrelas</b><span>no Google</span></div></div>
+    <div class="item"><span class="t-ic"><svg class="ico"><use href="#clock"/></svg></span><div><b>Todos os dias</b><span>aberto de seg. a dom.</span></div></div>
+    <div class="item"><span class="t-ic"><svg class="ico"><use href="#truck"/></svg></span><div><b>Entrega rápida</b><span>em toda Campinas</span></div></div>
+    <div class="item"><span class="t-ic"><svg class="ico"><use href="#pin"/></svg></span><div><b>Várias unidades</b><span>espalhadas pela cidade</span></div></div>
+  </div>
+</div>
+
+<!-- PRODUTOS / SERVIÇOS -->
+<section class="section" id="produtos">
+  <div class="paws"></div>
+  <div class="wrap" style="position:relative">
+    <div class="center">
+      <div class="eyebrow">O que você encontra</div>
+      <h2>Uma loja completa para o dia a dia do seu pet</h2>
+      <p>Do saco de ração ao brinquedo novo: variedade, preço bom e quem entende do assunto para te ajudar a escolher.</p>
+    </div>
+    <div class="scards">
+      <article class="scard">
+        <div class="scard-img"><img src="assets/foto-11.jpg" alt="Rações e petiscos"><span class="scard-ic"><svg class="ico"><use href="#bone"/></svg></span></div>
+        <div class="scard-body"><h3>Rações e petiscos</h3><p>Marcas para cães e gatos de todas as idades — um dos itens mais elogiados nas avaliações.</p><a class="link-arrow" href="https://wa.me/5519984317424?text=Ol%C3%A1!%20Quero%20saber%20sobre%20ra%C3%A7%C3%B5es." target="_blank" rel="noopener">Ver no WhatsApp <svg class="ico"><use href="#arrow"/></svg></a></div>
+      </article>
+      <article class="scard">
+        <div class="scard-img"><img src="assets/foto-04.jpg" alt="Acessórios e brinquedos"><span class="scard-ic"><svg class="ico"><use href="#ball"/></svg></span></div>
+        <div class="scard-body"><h3>Acessórios e brinquedos</h3><p>Coleiras, camas, roupinhas, comedouros e brinquedos para todos os tamanhos.</p><a class="link-arrow" href="https://wa.me/5519984317424?text=Ol%C3%A1!%20Quero%20ver%20acess%C3%B3rios." target="_blank" rel="noopener">Ver no WhatsApp <svg class="ico"><use href="#arrow"/></svg></a></div>
+      </article>
+      <article class="scard">
+        <div class="scard-img"><img src="assets/foto-03.jpg" alt="Higiene e cuidados"><span class="scard-ic"><svg class="ico"><use href="#droplet"/></svg></span></div>
+        <div class="scard-body"><h3>Higiene e cuidados</h3><p>Shampoos, tapetes higiênicos, antipulgas e itens de cuidado do dia a dia.</p><a class="link-arrow" href="https://wa.me/5519984317424?text=Ol%C3%A1!%20Quero%20ver%20itens%20de%20higiene." target="_blank" rel="noopener">Ver no WhatsApp <svg class="ico"><use href="#arrow"/></svg></a></div>
+      </article>
+      <article class="scard">
+        <div class="scard-img"><img src="assets/foto-10.jpg" alt="Entrega rápida em Campinas"><span class="scard-ic"><svg class="ico"><use href="#truck"/></svg></span></div>
+        <div class="scard-body"><h3>Entrega em Campinas</h3><p>Peça pelo WhatsApp e receba rápido — a entrega mais rápida da cidade, direto na sua casa.</p><a class="link-arrow" href="https://wa.me/5519984317424?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20com%20entrega." target="_blank" rel="noopener">Pedir agora <svg class="ico"><use href="#arrow"/></svg></a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE / STORY -->
+<section class="section story" id="sobre">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Mais que uma loja de produtos</div>
+      <h2>Uma pet shop de Campinas que os clientes recomendam</h2>
+      <p>São mais de 150 avaliações e nota 4,9 no Google. Aqui o seu pet encontra tudo o que precisa, com preço justo e uma equipe que gosta de verdade de animais — e ainda leva rápido até a sua porta.</p>
+      <ul>
+        <li><span class="ck"><svg class="ico"><use href="#check"/></svg></span> Nota 4,9 no Google</li>
+        <li><span class="ck"><svg class="ico"><use href="#check"/></svg></span> Aberto todos os dias</li>
+        <li><span class="ck"><svg class="ico"><use href="#check"/></svg></span> Entrega rápida em Campinas</li>
+        <li><span class="ck"><svg class="ico"><use href="#check"/></svg></span> Várias unidades na cidade</li>
+      </ul>
+    </div>
+    <div class="story-fig"><img src="assets/foto-02.jpg" alt="Loja Império Brasil Pet Shop"></div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="section dif">
+  <div class="paws"></div>
+  <div class="wrap" style="position:relative">
+    <div class="center">
+      <div class="eyebrow">Por que os clientes voltam</div>
+      <h2>Nota 4,9 com mais de 150 avaliações</h2>
+      <p>O que mais aparece nos comentários de quem compra aqui:</p>
+    </div>
+    <div class="dif-grid">
+      <div class="dif-card">
+        <div class="d-ic"><svg class="ico"><use href="#tag"/></svg></div>
+        <h3>Preço que cabe no bolso</h3>
+        <p>“Preços” é o ponto mais citado nas avaliações da loja — dá para abastecer o mês gastando menos.</p>
+        <span class="chip"><svg class="ico fill"><use href="#star"/></svg> o assunto nº 1 dos comentários</span>
+      </div>
+      <div class="dif-card">
+        <div class="d-ic"><svg class="ico"><use href="#bag"/></svg></div>
+        <h3>Variedade de rações</h3>
+        <p>Prateleiras cheias, várias marcas e opções para cada fase do seu pet, sempre com estoque.</p>
+        <span class="chip"><svg class="ico fill"><use href="#star"/></svg> muito elogiado no Google</span>
+      </div>
+      <div class="dif-card">
+        <div class="d-ic"><svg class="ico"><use href="#heart"/></svg></div>
+        <h3>Atendimento que ajuda</h3>
+        <p>Equipe atenciosa e educada, que orienta na escolha certa — do primeiro pet ao mais exigente.</p>
+        <span class="chip"><svg class="ico fill"><use href="#star"/></svg> destaque nas avaliações</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section class="section">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">Por dentro da loja</div>
+      <h2>Venha conhecer de perto</h2>
+    </div>
+    <div class="galeria">
+      <a class="g-tall" href="assets/foto-09.jpg" target="_blank"><img src="assets/foto-09.jpg" alt="Prateleiras de produtos para pets"></a>
+      <a class="g-wide" href="assets/foto-10.jpg" target="_blank"><img src="assets/foto-10.jpg" alt="Interior amplo da loja"></a>
+      <a href="assets/foto-04.jpg" target="_blank"><img src="assets/foto-04.jpg" alt="Acessórios e roupinhas para pets"></a>
+      <a href="assets/foto-03.jpg" target="_blank"><img src="assets/foto-03.jpg" alt="Corredor de produtos"></a>
+      <a href="assets/foto-11.jpg" target="_blank"><img src="assets/foto-11.jpg" alt="Variedade de rações e itens"></a>
+      <a class="g-wide" href="assets/foto-12.jpg" target="_blank"><img src="assets/foto-12.jpg" alt="Fachada da loja com produtos"></a>
+      <a href="assets/foto-07.jpg" target="_blank"><img src="assets/foto-07.jpg" alt="Rações em prateleira"></a>
+    </div>
+  </div>
+</section>
+
+<!-- UNIDADES -->
+<section class="section unid" id="unidades">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">Estamos pertinho de você</div>
+      <h2>Nossas unidades em Campinas</h2>
+      <p>Fale direto no WhatsApp da unidade mais perto de você.</p>
+    </div>
+    <div class="unid-grid">
+      <div class="unid-card destaque">
+        <div class="u-left"><span class="u-ic"><svg class="ico"><use href="#pin"/></svg></span><div><h3>Jardim Santa Lúcia <span class="selo">principal</span></h3><span>R. Ângela Stecca Pelegrini, 270 — Santa Lúcia</span></div></div>
+        <a class="btn btn-zap" href="https://wa.me/5519984317424?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20unidade%20Santa%20L%C3%BAcia." target="_blank" rel="noopener"><svg class="ico fill"><use href="#whatsapp"/></svg> WhatsApp</a>
+      </div>
+      <div class="unid-card">
+        <div class="u-left"><span class="u-ic"><svg class="ico"><use href="#pin"/></svg></span><div><h3>Jardim Novo Campos Elíseos</h3><span>Campinas — SP</span></div></div>
+        <a class="btn btn-zap" href="https://wa.me/5519982062970?text=Ol%C3%A1!%20Vim%20pelo%20site." target="_blank" rel="noopener"><svg class="ico fill"><use href="#whatsapp"/></svg> WhatsApp</a>
+      </div>
+      <div class="unid-card">
+        <div class="u-left"><span class="u-ic"><svg class="ico"><use href="#pin"/></svg></span><div><h3>Jardim Campos Elíseos</h3><span>Campinas — SP</span></div></div>
+        <a class="btn btn-zap" href="https://wa.me/5519982781227?text=Ol%C3%A1!%20Vim%20pelo%20site." target="_blank" rel="noopener"><svg class="ico fill"><use href="#whatsapp"/></svg> WhatsApp</a>
+      </div>
+      <div class="unid-card">
+        <div class="u-left"><span class="u-ic"><svg class="ico"><use href="#pin"/></svg></span><div><h3>Jardim Ipiranga</h3><span>Campinas — SP</span></div></div>
+        <a class="btn btn-zap" href="https://wa.me/5519982025025?text=Ol%C3%A1!%20Vim%20pelo%20site." target="_blank" rel="noopener"><svg class="ico fill"><use href="#whatsapp"/></svg> WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="section" id="contato">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">Contato · unidade Santa Lúcia</div>
+      <h2>Passe na loja ou peça de casa</h2>
+    </div>
+    <div class="contato-grid">
+      <div>
+        <div class="info-linha"><span class="l-ic"><svg class="ico"><use href="#pin"/></svg></span><div><b>Endereço</b><span>R. Ângela Stecca Pelegrini, 270 — Jardim Santa Lúcia, Campinas/SP, 13060-486</span></div></div>
+        <div class="info-linha"><span class="l-ic"><svg class="ico fill"><use href="#whatsapp"/></svg></span><div><b>WhatsApp</b><span>(19) 98431-7424</span></div></div>
+        <div class="info-linha"><span class="l-ic"><svg class="ico"><use href="#phone"/></svg></span><div><b>Telefone</b><span>(19) 3326-4232</span></div></div>
+        <div class="info-linha"><span class="l-ic"><svg class="ico fill"><use href="#instagram"/></svg></span><div><b>Instagram</b><span>@imperio.brasilpetshop</span></div></div>
+        <div class="info-linha" style="border:0"><span class="l-ic"><svg class="ico"><use href="#clock"/></svg></span><div style="flex:1"><b>Horário de funcionamento</b>
+          <ul class="horario">
+            <li><span>Segunda a sexta</span><b>08h – 19h</b></li>
+            <li><span>Sábado</span><b>08h – 18h</b></li>
+            <li><span>Domingo</span><b>08h – 13h</b></li>
+          </ul>
+        </div></div>
+        <div style="margin-top:26px;display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn btn-zap" href="https://wa.me/5519984317424?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener"><svg class="ico fill"><use href="#whatsapp"/></svg> Fazer um pedido</a>
+          <a class="btn btn-out" href="https://www.google.com/maps?cid=2290198570706482114" target="_blank" rel="noopener"><svg class="ico"><use href="#pin"/></svg> Como chegar</a>
+        </div>
+      </div>
+      <div class="mapa-wrap">
+        <iframe class="mapa" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=R.%20%C3%82ngela%20Stecca%20Pelegrini%2C%20270%20Campinas&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="section cta-final">
+  <div class="paws"></div>
+  <div class="wrap" style="position:relative">
+    <h2>Seu pet merece o melhor</h2>
+    <p>Chame a gente no WhatsApp e receba tudo o que ele precisa, rapidinho, em qualquer canto de Campinas.</p>
+    <a class="btn btn-zap" style="font-size:18px;padding:16px 32px" href="https://wa.me/5519984317424?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener"><svg class="ico fill"><use href="#whatsapp"/></svg> Pedir agora pelo WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <a class="logo" href="#topo"><img class="logo-img" src="image-logo.png" alt="Império Brasil Pet Shop — Campinas"><span class="logo-tag" style="color:#cbd8e4">Pet Shop<br>Campinas</span></a>
+      <div class="social">
+        <a href="https://www.instagram.com/imperio.brasilpetshop/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ico fill"><use href="#instagram"/></svg></a>
+        <a href="https://www.facebook.com/imperiobrasilpetshop/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="ico fill"><use href="#facebook"/></svg></a>
+        <a href="https://wa.me/5519984317424" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ico fill"><use href="#whatsapp"/></svg></a>
+      </div>
+    </div>
+    <p>© Império Brasil Pet Shop — Campinas/SP. Rações, acessórios e entrega rápida para o seu pet.</p>
+    <p class="aviso">Proposta de site (protótipo) criada com dados e fotos públicas do perfil do negócio no Google. Antes da publicação oficial, confirmar com a empresa as informações e a autorização de uso das imagens.</p>
+  </div>
+</footer>
+
+<a class="zap-float" href="https://wa.me/5519984317424?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ico fill"><use href="#whatsapp"/></svg></a>
+
+<script>
+  const burger=document.getElementById('burger');
+  const menu=document.querySelector('.menu');
+  burger.addEventListener('click',()=>{
+    const open=menu.style.display==='flex';
+    if(open){menu.style.display='';return;}
+    Object.assign(menu.style,{display:'flex',position:'absolute',flexDirection:'column',background:'#fff',top:'72px',left:'0',right:'0',padding:'18px 24px',borderBottom:'1px solid var(--linha)',gap:'16px',marginLeft:'0',boxShadow:'var(--sombra)'});
+  });
+  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{if(window.innerWidth<=860)menu.style.display='';}));
+</script>
+</body>
+</html>
